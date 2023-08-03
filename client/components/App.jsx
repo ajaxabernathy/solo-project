@@ -1,14 +1,16 @@
 import React from 'react';
 import MainContainer from './MainContainer.jsx';
 import DragAndDrop from './DragAndDrop.jsx';
-import FileDisplay from './FileDisplay.jsx';
+import GetAudio from './GetAudio.jsx';
+import RenderAudio from './RenderAudio.jsx';
 
 const App = () => {
     return(
         <div>
             <MainContainer />
             <DragAndDrop />
-            <FileDisplay />
+            <GetAudio />
+            <RenderAudio />
         </div>
     );
 }

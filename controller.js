@@ -8,10 +8,8 @@ const controller = {};
 
 controller.getAudioFiles = async function(req, res, next) {
     console.log('got to controller');
-    const foundFile = AudioFile.findOne({filename: "Cabasa Verb MPC2000.wav"});
-    await foundFile;
-    res.locals.file = foundFile;
-    console.log(res.locals.file)
+    const foundFiles = await AudioFile.find();
+    res.locals.file = foundFiles;
     return next();
 }
 
