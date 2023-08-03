@@ -57,20 +57,16 @@ module.exports = {
           },
         }
       },
+      {
+        test: /\.mp3$/,
+        loader: 'file-loader'
+      },
+      {
+        test: /\.mp3$/i,
+        use: 'raw-loader',
+      },
     ]
   },
-  // devServer: {
-  //   static: {
-  //     publicPath: '/',
-  //     directory: path.resolve(__dirname)
-  //   },
-  //   proxy: {
-  //     '/api': {
-  //          target: 'http://localhost:8080',
-  //          router: () => 'http://localhost:3000'
-  //     }
-  //  }
-  // },
   plugins: [
     new HtmlWebpackPlugin({
      title: 'Development',

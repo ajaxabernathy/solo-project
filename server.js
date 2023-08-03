@@ -4,6 +4,8 @@ const app = express();
 
 const mongoose = require('mongoose');
 
+const multer = require('multer'); 
+
 const api = require(path.join(__dirname, './routes/api.js'));
 
 const PORT = 3000;
@@ -19,8 +21,9 @@ mongoose.connection.once('open', () => {
   console.log('Connected to Database');
 });
 
-// handle requests for static files
-// app.use(express.static(path.resolve(__dirname, './client/styles.css')));
+//database model for new audio file upload
+const Audio = mongoose.model
+
 
 // route handlers
 app.use('/api', api);
