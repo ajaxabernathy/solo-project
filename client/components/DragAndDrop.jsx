@@ -28,7 +28,7 @@ function DragAndDrop() {
     console.log(file)
   return (
     <>
-    <FileUploader handleChange={handleChange} name="file" enctype="multipart/form-data" types={fileTypes} />
+    <FileUploader className="uploader" multiple="true" handleChange={handleChange} name="file" enctype="multipart/form-data" types={fileTypes} />
     </>
   );
 }

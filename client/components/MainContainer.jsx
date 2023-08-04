@@ -11,13 +11,13 @@ const MainContainer = () => {
         <div >
             <h1 className="header">Sample Selector</h1>
             <form>
-                <label>
+                {/* <label>
                     Name:
                  <input type="text" name="name" />
                 </label>
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit" /> */}
             </form>
-            <div className="MainContainer">Show this test</div>
+            <div className="MainContainer">Your Library / Sounds</div>
         </div> 
     );
 }

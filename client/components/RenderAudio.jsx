@@ -10,7 +10,7 @@ const RenderAudio = (props) => {
     
     return (
         <div> 
-            <audio controls>
+            <audio controls className="audioFile">
                 <source src={props.path} type="audio/wav" />
             </audio>
         </div>

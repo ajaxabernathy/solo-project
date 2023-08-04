@@ -1,23 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Oswald&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Oswald&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Creepster&family=Oswald&family=Roboto:wght@300;400&display=swap');
 
 
-body {
-    padding-top: 10px;
+html {
+    height: 100%;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #fcc3c3 100%);
+
 }
 
 .header {
-    font-family: 'Roboto';
+    font-family: 'Creepster';
+    font-weight: 400;
+    font-size: 150px;
     text-align: center;
-    /* letter-spacing: .2em; */
-    margin-bottom: 10px;
-    color: rgb(0, 0, 0);
+    margin-top: 180px;
+    margin-bottom: 80px;
+    color: rgba(0, 0, 0, 0.527);
 }
 
-.MainContainer{
-    background-color: aliceblue;
+.MainContainer {
+    font-family: 'Roboto';
+    margin-bottom: 30px;
+    margin-left: 50px;
+    color: rgba(0, 0, 0, 0.527);
 }
 
-.dragdrop {
-    margin-top: 20px;
-    background-color: blue;
+.getButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: solid;
+    color: rgba(0, 0, 0, 0.67);
+    background: linear-gradient(62deg, #8ec5fc00 0%, #E0C3FC 100%);
+    background-origin: border-box;
+    margin-bottom: 30px;
+
+
+}
+
+
+.guZdik {
+    font-family: 'Roboto';
+    font-size: large;
+    margin-left: 50px;
+    background-color: rgba(255, 255, 255, 0.481);
+    margin-bottom: 30px;
+}
+
+.audioFile {
+    /* display: flex; */
+    align-items: center;
+    margin-left: 50px;
+    justify-content: center;
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+.nav {
+    margin-left: 50px;
+    font-family: 'Roboto';
+    color: aliceblue;
+    text-align: right;
+    margin-right: 20px;
 }

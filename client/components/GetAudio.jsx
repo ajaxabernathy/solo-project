@@ -24,14 +24,14 @@ const GetAudio = () => {
 
     const filesArray = []
     filesForDisplay.map((file, i) => {
-      filesArray.push(<RenderAudio className="audioFile" path={file.path} key={i} file={file} />)
+      filesArray.push(<RenderAudio path={file.path} key={i} file={file} />)
     })
 
     // console.log(filesToDisplay)
     
     return (
        <div>
-        <button onClick={handleClick} >Click to get audio</button>
+        <button className="getButton" onClick={handleClick} >Get samples</button>
         {filesArray}
        </div>
     )
